@@ -1590,15 +1590,13 @@ body, html {
 ================================= */
 .contact-section {
   position: relative;
-  min-height: 100vh;
+  min-height: auto; /* antes: 100vh */
   width: 100%;
   display: flex;
-  align-items: center;
-  overflow: hidden;
-  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  padding: 2rem 1rem;
+  align-items: flex-start; /* antes: center */
+  justify-content: center;
+  padding: 4rem 1rem; /* aumenta el top para separarlo un poco */
 }
-
 .contact-section.active {
   opacity: 1;
   transform: translateY(0);
@@ -1612,8 +1610,7 @@ body, html {
 
 /* CRÍTICO: Centrar el row verticalmente */
 .contact-section .row {
-  align-items: center !important;
-  min-height: auto;
+  align-items: flex-start !important; /* antes: center */
 }
 
 /* Centrar verticalmente la columna izquierda */
@@ -2037,6 +2034,19 @@ select.form-control {
     justify-content: center;
   }
 }
+
+.contact-section.inactive {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact-section.active {
+  display: flex !important;
+  opacity: 1;
+  visibility: visible;
+}
+
 /* =================================
    RESPONSIVE DESIGN - MEJORADO
 ================================= */
@@ -2345,15 +2355,4 @@ select.form-control {
 .skills-section,
 .projects-section {
   will-change: transform, opacity;
-}
-.contact-section.inactive {
-  display: none !important;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.contact-section.active {
-  display: flex !important;
-  opacity: 1;
-  visibility: visible;
 }
