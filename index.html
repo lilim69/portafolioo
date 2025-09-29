@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Camila Rayo - Desarrolladora Web especializada en crear experiencias digitales únicas">
+  <meta name="keywords" content="desarrolladora web, frontend, javascript, html, css, bootstrap">
+  <title>Camila Rayo - Desarrolladora Web</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" as="style">
+  
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero d-flex align-items-center active">
+    <div class="auroras"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container text-light position-relative">
+      <div class="row align-items-center min-vh-100">
+        <!-- Foto de perfil -->
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <div class="profile-pic">
+            <img src="imagenes/3.jpg" alt="Camila Rayo - Desarrolladora Web" loading="eager">
+            <div class="profile-glow"></div>
+          </div>
+        </div>
+
+        <!-- Contenido de texto -->
+        <div class="col-md-6 text-md-start text-center">
+          <div class="text-content">
+            <h1 class="intro mb-3">
+              <span id="typing-hello">Hola, soy </span>
+              <span class="name d-block">Camila Rayo</span>
+            </h1>
+            <h2 id="typing-role" class="role-text mb-4">Desarrolladora Web</h2>
+
+            <div class="social-icons my-4" role="navigation" aria-label="Enlaces sociales">
+              <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/tuusuario" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+            <p id="typing-email" class="email mb-0">rayocamila01@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elementos decorativos -->
+    <div class="floating-elements" aria-hidden="true">
+      <div class="floating-dot dot-1"></div>
+      <div class="floating-dot dot-2"></div>
+      <div class="floating-dot dot-3"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section d-flex align-items-center inactive">
+    <div class="auroras-about"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container text-light position-relative">
+      <div class="row align-items-center min-vh-100">
+        <!-- SVG Interactivo -->
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <div class="lightning-container">
+            <svg width="320" height="320" viewBox="0 0 320 320" class="lightning-svg" aria-hidden="true">
+              <!-- Círculo exterior -->
+              <circle cx="160" cy="160" r="150" fill="none" stroke="url(#gradient1)" stroke-width="2" opacity="0.3" class="outer-circle"/>
+              
+              <!-- Círculo medio -->
+              <circle cx="160" cy="160" r="120" fill="none" stroke="url(#gradient2)" stroke-width="1" opacity="0.5" class="middle-circle"/>
+              
+              <!-- Rayo principal -->
+              <path d="M160 60 L140 120 L170 120 L150 180 L180 130 L160 130 L160 60 Z" 
+                    fill="url(#lightningGradient)" class="main-lightning"/>
+              
+              <!-- Rayos secundarios -->
+              <path d="M120 100 L100 130 L125 125 L110 150" 
+                    stroke="url(#gradient3)" stroke-width="3" fill="none" class="side-lightning lightning-1"/>
+              
+              <path d="M200 100 L220 130 L195 125 L210 150" 
+                    stroke="url(#gradient3)" stroke-width="3" fill="none" class="side-lightning lightning-2"/>
+              
+              <path d="M90 180 L70 200 L95 195 L80 220" 
+                    stroke="url(#gradient4)" stroke-width="2" fill="none" class="side-lightning lightning-3"/>
+              
+              <path d="M230 180 L250 200 L225 195 L240 220" 
+                    stroke="url(#gradient4)" stroke-width="2" fill="none" class="side-lightning lightning-4"/>
+              
+              <!-- Partículas -->
+              <circle cx="140" cy="80" r="2" fill="var(--neon-cyan)" class="particle particle-1"/>
+              <circle cx="180" cy="90" r="1.5" fill="var(--neon-pink)" class="particle particle-2"/>
+              <circle cx="120" cy="140" r="1" fill="var(--neon-blue)" class="particle particle-3"/>
+              <circle cx="200" cy="160" r="2" fill="var(--neon-lila)" class="particle particle-4"/>
+              <circle cx="160" cy="200" r="1.5" fill="var(--neon-cyan)" class="particle particle-5"/>
+              <circle cx="100" cy="200" r="1" fill="var(--neon-pink)" class="particle particle-6"/>
+              <circle cx="220" cy="140" r="1.5" fill="var(--neon-blue)" class="particle particle-7"/>
+              
+              <!-- Definiciones de gradientes -->
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--neon-lila);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:var(--neon-blue);stop-opacity:1" />
+                </linearGradient>
+                
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--neon-blue);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:var(--neon-cyan);stop-opacity:1" />
+                </linearGradient>
+                
+                <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--neon-cyan);stop-opacity:1" />
+                  <stop offset="50%" style="stop-color:var(--neon-blue);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:var(--neon-lila);stop-opacity:1" />
+                </linearGradient>
+                
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--neon-pink);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:var(--neon-lila);stop-opacity:1" />
+                </linearGradient>
+                
+                <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:var(--neon-cyan);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:var(--neon-pink);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+            
+            <div class="energy-field" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Contenido de texto -->
+        <div class="col-md-6 text-md-start text-center">
+          <div class="about-content">
+            <h2 class="about-title mb-4">Sobre Mí</h2>
+            
+            <div class="about-text">
+              <p class="about-paragraph">
+                Estudio Ingeniería de Sistemas, una carrera que llegó a mí gracias a una beca, pero que rápidamente se convirtió en una verdadera pasión. Desde siempre he destacado por mi habilidad con la tecnología, y hoy combino ese talento con una nueva faceta creativa que descubrí al cursar un bootcamp de desarrollo web.
+              </p>
+              
+              <p class="about-paragraph">
+                El diseño web despertó en mí una sensibilidad estética que no sabía que tenía. Me inspira aprender constantemente nuevas tecnologías, evolucionar con el mundo digital y convertir cada herramienta en un aliado para crear experiencias únicas. Me gusta desarrollar soluciones que no solo funcionen perfectamente, sino que también conecten emocionalmente a través del diseño.
+              </p>
+              
+              <p class="about-curiosity">
+                <span class="curiosity-label">Dato curioso:</span> soy una amante incondicional de los animales. Actualmente tengo 7 mascotas porque... bueno, el espacio tiene sus límites, ¡pero mi corazón no! 🐾
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-arrow" role="button" tabindex="0" aria-label="Continuar a la siguiente sección">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & EXPERIENCE SECTION -->
+  <section class="skills-section d-flex align-items-center inactive">
+    <div class="matrix-bg">
+      <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+    </div>
+    <div class="auroras-skills"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container text-light position-relative">
+      <div class="row min-vh-100">
+        <!-- Skills -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center mb-5 mb-lg-0">
+          <div class="skills-circles-container">
+            <h2 class="skills-title text-center mb-4">Mis Habilidades</h2>
+            
+            <div class="skills-grid">
+              <!-- HTML/CSS -->
+              <div class="skill-circle" data-percentage="90">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-lila)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-circle" data-percentage="80">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-blue)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bootstrap -->
+              <div class="skill-circle" data-percentage="85">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-pink)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">Bootstrap</span>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-circle" data-percentage="75">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-cyan)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Git -->
+              <div class="skill-circle" data-percentage="70">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-lila)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Figma -->
+              <div class="skill-circle" data-percentage="80">
+                <div class="circle-progress">
+                  <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="50" fill="none" stroke="var(--neon-blue)" stroke-width="8" 
+                            stroke-dasharray="314" stroke-dashoffset="314" class="progress-circle"
+                            transform="rotate(-90 55 55)" stroke-linecap="round"/>
+                  </svg>
+                  <div class="skill-info">
+                    <span class="skill-name">Figma</span>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="experience-content">
+            <h2 class="experience-title mb-4">Mi Experiencia</h2>
+            
+            <!-- Code typing container -->
+            <div class="code-typing-container mb-4">
+              <div class="code-window">
+                <div class="window-header">
+                  <span class="window-dot red"></span>
+                  <span class="window-dot yellow"></span>
+                  <span class="window-dot green"></span>
+                  <span class="window-title">mi_experiencia.js</span>
+                </div>
+                <div class="code-content">
+                  <pre id="typing-code" aria-label="Código de experiencia"></pre>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Experience cards -->
+            <div class="experience-cards">
+              <div class="exp-card">
+                <div class="card-glow"></div>
+                <h4>💻 Desarrollo Colaborativo</h4>
+                <p>1 año creando proyectos en equipos multidisciplinarios, aprendiendo las mejores prácticas de desarrollo.</p>
+              </div>
+              
+              <div class="exp-card">
+                <div class="card-glow"></div>
+                <h4>🎓 Formación Técnica</h4>
+                <p>Bootcamp de Desarrollo Web + Estudios en Desarrollo Informático, combinando teoría y práctica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-arrow" role="button" tabindex="0" aria-label="Continuar a la siguiente sección">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+<!-- PROJECTS SECTION -->
+<section class="projects-section d-flex align-items-center inactive">
+  <div class="projects-bg">
+    <canvas id="projectsMatrixCanvas"></canvas>
+  </div>
+  <div class="auroras-projects"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="container text-light position-relative">
+    <div class="row min-vh-100">
+      <div class="col-12 text-center mb-3">
+        <h2 class="projects-title">Mis Proyectos</h2>
+        <p class="projects-subtitle">Una colección de mis trabajos más destacados</p>
+      </div>
+      
+      <div class="col-12">
+        <!-- Carrusel Simple -->
+        <div class="simple-carousel-container">
+          <div class="simple-carousel-wrapper">
+            <div class="simple-carousel-track" id="simpleCarouselTrack">
+              
+              <!-- Proyecto 1: Día del Idioma -->
+              <article class="simple-project-card">
+                <div class="simple-project-image">
+                  <img src="imagenes/idioma.png" alt="Proyecto Día del Idioma" loading="lazy">
+                  <div class="simple-project-overlay">
+                    <div class="simple-project-links">
+                      <a href="https://lilim69.github.io/Dia-idioma/" target="_blank" rel="noopener" class="simple-project-link demo" title="Ver Demo">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="https://github.com/lilim69/Dia-idioma" target="_blank" rel="noopener" class="simple-project-link repo" title="Ver Código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-project-content">
+                  <h3 class="simple-project-title">Día del Idioma</h3>
+                  <p class="simple-project-description">
+                    Sitio web conmemorativo dedicado al Día del Idioma Español. Incluye información histórica, 
+                    actividades interactivas y recursos educativos sobre la lengua española.
+                  </p>
+                  <div class="simple-project-tech">
+                    <span class="simple-tech-tag">HTML5</span>
+                    <span class="simple-tech-tag">CSS3</span>
+                    <span class="simple-tech-tag">JavaScript</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 2: Carta de Presentación -->
+              <article class="simple-project-card">
+                <div class="simple-project-image">
+                  <img src="imagenes/carta.png" alt="Proyecto Carta de Presentación" loading="lazy">
+                  <div class="simple-project-overlay">
+                    <div class="simple-project-links">
+                      <a href="https://lilim69.github.io/CartaPresentacion/" target="_blank" rel="noopener" class="simple-project-link demo" title="Ver Demo">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="https://github.com/lilim69/CartaPresentacion" target="_blank" rel="noopener" class="simple-project-link repo" title="Ver Código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-project-content">
+                  <h3 class="simple-project-title">Carta de Presentación</h3>
+                  <p class="simple-project-description">
+                    Carta de presentación digital e interactiva con animaciones y efectos visuales. 
+                    Diseñada para destacar habilidades y experiencia de manera profesional y creativa.
+                  </p>
+                  <div class="simple-project-tech">
+                    <span class="simple-tech-tag">HTML5</span>
+                    <span class="simple-tech-tag">CSS3</span>
+                    <span class="simple-tech-tag">Bootstrap</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 3: Red Social -->
+              <article class="simple-project-card">
+                <div class="simple-project-image">
+                  <img src="imagenes/redsocial.png" alt="Proyecto Red Social" loading="lazy">
+                  <div class="simple-project-overlay">
+                    <div class="simple-project-links">
+                      <a href="https://lilim69.github.io/redSocial/" target="_blank" rel="noopener" class="simple-project-link demo" title="Ver Demo">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="https://github.com/lilim69/redSocial" target="_blank" rel="noopener" class="simple-project-link repo" title="Ver Código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-project-content">
+                  <h3 class="simple-project-title">Red Social</h3>
+                  <p class="simple-project-description">
+                    Plataforma de red social con funcionalidades de publicación, interacción y gestión de perfiles. 
+                    Interfaz moderna y responsiva con sistema de posts y comentarios.
+                  </p>
+                  <div class="simple-project-tech">
+                    <span class="simple-tech-tag">JavaScript</span>
+                    <span class="simple-tech-tag">CSS3</span>
+                    <span class="simple-tech-tag">Bootstrap</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 4: Blog -->
+              <article class="simple-project-card">
+                <div class="simple-project-image">
+                  <img src="imagenes/blog.png" alt="Proyecto Blog" loading="lazy">
+                  <div class="simple-project-overlay">
+                    <div class="simple-project-links">
+                      <a href="https://lilim69.github.io/blog/" target="_blank" rel="noopener" class="simple-project-link demo" title="Ver Demo">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="https://github.com/lilim69/blog" target="_blank" rel="noopener" class="simple-project-link repo" title="Ver Código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-project-content">
+                  <h3 class="simple-project-title">Blog Desarrolladoras</h3>
+                  <p class="simple-project-description">
+                    Blog especializado para desarrolladoras web con artículos, tutoriales y recursos. 
+                    Diseño limpio y funcional con sistema de categorías y búsqueda.
+                  </p>
+                  <div class="simple-project-tech">
+                    <span class="simple-tech-tag">HTML5</span>
+                    <span class="simple-tech-tag">CSS3</span>
+                    <span class="simple-tech-tag">JavaScript</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 5: ABC Educativo -->
+              <article class="simple-project-card">
+                <div class="simple-project-image">
+                  <img src="imagenes/abc.png" alt="Proyecto ABC Educativo" loading="lazy">
+                  <div class="simple-project-overlay">
+                    <div class="simple-project-links">
+                      <a href="https://lilim69.github.io/ABC/" target="_blank" rel="noopener" class="simple-project-link demo" title="Ver Demo">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="https://github.com/lilim69/ABC" target="_blank" rel="noopener" class="simple-project-link repo" title="Ver Código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-project-content">
+                  <h3 class="simple-project-title">ABC Educativo</h3>
+                  <p class="simple-project-description">
+                    Aplicación educativa interactiva diseñada para niños en edad preescolar. 
+                    Incluye juegos, actividades y contenido multimedia para el aprendizaje del alfabeto.
+                  </p>
+                  <div class="simple-project-tech">
+                    <span class="simple-tech-tag">JavaScript</span>
+                    <span class="simple-tech-tag">CSS3</span>
+                    <span class="simple-tech-tag">HTML5</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          
+          <!-- Controles del carrusel -->
+          <div class="simple-carousel-controls">
+            <button class="simple-carousel-btn prev" id="simplePrevBtn" aria-label="Proyecto anterior">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="simple-carousel-btn next" id="simpleNextBtn" aria-label="Proyecto siguiente">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-arrow" role="button" tabindex="0" aria-label="Volver al inicio">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact-section d-flex align-items-center inactive">
+  <div class="auroras-contact"></div>
+  <div class="hero-overlay"></div>
+  
+  <div class="container text-light position-relative">
+    <div class="row min-vh-100 align-items-center">
+      <!-- SVG Animado de Comunicación -->
+      <div class="col-lg-5 text-center">
+        <div class="communication-svg-container">
+          <svg width="350" height="350" viewBox="0 0 350 350" class="communication-svg">
+            <!-- Círculos concéntricos -->
+            <circle cx="175" cy="175" r="140" fill="none" stroke="url(#contactGradient1)" stroke-width="1" opacity="0.3" class="wave-circle wave-1"/>
+            <circle cx="175" cy="175" r="110" fill="none" stroke="url(#contactGradient2)" stroke-width="1" opacity="0.4" class="wave-circle wave-2"/>
+            <circle cx="175" cy="175" r="80" fill="none" stroke="url(#contactGradient3)" stroke-width="1" opacity="0.5" class="wave-circle wave-3"/>
+            
+            <!-- Nodo central -->
+            <circle cx="175" cy="175" r="20" fill="url(#contactGradient4)" class="central-node"/>
+            <circle cx="175" cy="175" r="15" fill="var(--neon-cyan)" opacity="0.6" class="pulse-node"/>
+            
+            <!-- Nodos satélite -->
+            <g class="satellite-node node-1">
+              <circle cx="175" cy="75" r="12" fill="url(#contactGradient5)"/>
+              <circle cx="175" cy="75" r="8" fill="var(--neon-lila)" opacity="0.7"/>
+              <line x1="175" y1="95" x2="175" y2="155" stroke="var(--neon-cyan)" stroke-width="2" class="connection-line"/>
+            </g>
+            
+            <g class="satellite-node node-2">
+              <circle cx="275" cy="175" r="12" fill="url(#contactGradient5)"/>
+              <circle cx="275" cy="175" r="8" fill="var(--neon-pink)" opacity="0.7"/>
+              <line x1="255" y1="175" x2="195" y2="175" stroke="var(--neon-pink)" stroke-width="2" class="connection-line"/>
+            </g>
+            
+            <g class="satellite-node node-3">
+              <circle cx="175" cy="275" r="12" fill="url(#contactGradient5)"/>
+              <circle cx="175" cy="275" r="8" fill="var(--neon-lila)" opacity="0.7"/>
+              <line x1="175" y1="255" x2="175" y2="195" stroke="var(--neon-lila)" stroke-width="2" class="connection-line"/>
+            </g>
+            
+            <g class="satellite-node node-4">
+              <circle cx="75" cy="175" r="12" fill="url(#contactGradient5)"/>
+              <circle cx="75" cy="175" r="8" fill="var(--neon-cyan)" opacity="0.7"/>
+              <line x1="95" y1="175" x2="155" y2="175" stroke="var(--neon-cyan)" stroke-width="2" class="connection-line"/>
+            </g>
+            
+            <!-- Partículas flotantes -->
+            <circle cx="120" cy="120" r="2" fill="var(--neon-cyan)" class="floating-particle p1"/>
+            <circle cx="230" cy="120" r="2" fill="var(--neon-pink)" class="floating-particle p2"/>
+            <circle cx="230" cy="230" r="2" fill="var(--neon-lila)" class="floating-particle p3"/>
+            <circle cx="120" cy="230" r="2" fill="var(--neon-cyan)" class="floating-particle p4"/>
+            
+            <!-- Gradientes -->
+            <defs>
+              <linearGradient id="contactGradient1">
+                <stop offset="0%" stop-color="var(--neon-cyan)"/>
+                <stop offset="100%" stop-color="var(--neon-lila)"/>
+              </linearGradient>
+              <linearGradient id="contactGradient2">
+                <stop offset="0%" stop-color="var(--neon-pink)"/>
+                <stop offset="100%" stop-color="var(--neon-blue)"/>
+              </linearGradient>
+              <linearGradient id="contactGradient3">
+                <stop offset="0%" stop-color="var(--neon-lila)"/>
+                <stop offset="100%" stop-color="var(--neon-cyan)"/>
+              </linearGradient>
+              <linearGradient id="contactGradient4">
+                <stop offset="0%" stop-color="var(--neon-cyan)"/>
+                <stop offset="100%" stop-color="var(--neon-pink)"/>
+              </linearGradient>
+              <linearGradient id="contactGradient5">
+                <stop offset="0%" stop-color="rgba(178, 107, 232, 0.5)"/>
+                <stop offset="100%" stop-color="rgba(0, 212, 255, 0.5)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        
+        <!-- Info de contacto -->
+        <div class="contact-info mt-4">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bogotá, Colombia</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>rayocamila01@gmail.com</span>
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Disponible para proyectos
+          </div>
+        </div>
+      </div>
+      
+      <!-- Formulario de Contacto -->
+      <div class="col-lg-7">
+        <div class="contact-content">
+          <h2 class="contact-title mb-3">Trabajemos Juntos</h2>
+          <p class="contact-subtitle mb-4">
+            ¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea 
+            y cómo puedo ayudarte a hacerla realidad.
+          </p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <label for="name">Tu Nombre</label>
+                  <input type="text" class="form-control" id="name" required placeholder="María García">
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <label for="email">Tu Email</label>
+                  <input type="email" class="form-control" id="email" required placeholder="maria@ejemplo.com">
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <label for="subject">Asunto</label>
+                  <input type="text" class="form-control" id="subject" required placeholder="Propuesta de proyecto">
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <label for="projectType">Tipo de Proyecto</label>
+                  <select class="form-control" id="projectType">
+                    <option value="freelance">Freelance</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="empleo">Empleo</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group mb-4">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" id="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">
+              <span class="btn-text">Enviar Mensaje</span>
+              <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+            </button>
+          </form>
+          
+          <!-- Proceso de trabajo -->
+          <div class="work-process mt-5">
+            <h3 class="process-title">Cómo Trabajo</h3>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h4>Conversación</h4>
+                  <p>Discutimos tu proyecto y objetivos</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h4>Propuesta</h4>
+                  <p>Creo un plan detallado y timeline</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h4>Desarrollo</h4>
+                  <p>Construcción con actualizaciones constantes</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                  <h4>Entrega</h4>
+                  <p>Revisión final y lanzamiento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="scroll-indicator">
+    <div class="scroll-arrow" role="button" tabindex="0" aria-label="Volver al inicio">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </div>
+</section>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
